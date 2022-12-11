@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: darkgreen;
+}
+
+body, .quote-input {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.container {
+    background: #F0DB4F;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    width: 700px;
+    max-width: 90%;
+}
+
+.timer {
+    position: absolute;
+    top: 2rem;
+    font-size: 4rem;
+    color: #F0DB4F;
+    font-weight: bold;
+}
+
+.quote__display {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 3px);
+    margin-right: calc(1rem + 3px);
+}
+
+.quote__input {
+    background-color: transparent;
+    border: 3px solid yellowgreen;
+    outline: none;
+    height: 8rem;
+    width: 100%;
+    border-radius: .5rem;
+    resize: none;
+    margin: auto;
+    padding: .6rem 1rem;
+    font-size: 1rem;
+}
+
+.quote__input:focus {
+    border-color: black;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
