@@ -27,7 +27,7 @@ quoteInputElement.addEventListener('input', () => {
 })
 
 function randomText() {
-    return fetch('http://api.quotable.io/random')
+    return fetch('https://api.quotable.io/random')
             .then(res => res.json())
             .then(data => data.content)
                 
